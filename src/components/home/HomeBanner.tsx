@@ -16,7 +16,7 @@ const HomeBanner = () => {
       <div className="container mx-auto text-stone-700">
         <p className="text-5xl font-bold">We Drive Digital</p>
         <p className="text-5xl font-bold py-4">Transformation, Globally.</p>
-        <Button>View More</Button>
+        <Button className="mt-4">View More</Button>
       </div>
     </div>
   );

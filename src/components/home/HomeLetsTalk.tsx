@@ -3,12 +3,13 @@ import { Button, Card } from "../ui";
 import Image from "next/image";
 import { ContactIcon, MailIcon, PhoneCallIcon } from "lucide-react";
 import Link from "next/link";
+import { PageHeader } from "../shared";
 
 const HomeLetsTalk = () => {
   return (
     <div className="py-12 container mx-auto">
-      <p className="text-5xl text-center font-semibold pb-8">Let’s Talk</p>
-      <Card className="p-4 flex items-center gap-4">
+      <PageHeader label="Let’s Talk" />
+      <Card className="p-5 flex items-center gap-4">
         <Button variant={"secondary"} className="h-24">
           <Image
             src={"/lets-talk.png"}
