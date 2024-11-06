@@ -1,4 +1,10 @@
-import { HomeBanner, HomeLetsTalk, HomeOurExpertise } from "@/components/home";
+import {
+  HomeBanner,
+  HomeLetsTalk,
+  HomeOurExpertise,
+  HomeOurServices,
+  HomeWhatWeDo,
+} from "@/components/home";
 
 export default function Home() {
   return (
@@ -6,6 +12,8 @@ export default function Home() {
       <HomeBanner />
       <HomeLetsTalk />
       <HomeOurExpertise />
+      <HomeWhatWeDo />
+      <HomeOurServices />
     </div>
   );
 }

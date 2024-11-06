@@ -31,7 +31,7 @@ const HomeOurExpertise = () => {
   };
   return (
     <div className="pb-12  container mx-auto">
-      <PageHeader label="Our Expertise—Your Edge" />
+      <PageHeader label="Our Expertise—Your Edge" className="text-center" />
       <div className="flex items-stretch justify-between gap-12">
         <ExpertiseCard
           imageSrc={"/expertise-saas.png"}
