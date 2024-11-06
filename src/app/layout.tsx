@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import { Footer, TopNavbar } from "@/components/shared";
+import { TopNavbar } from "@/components/shared";
 
 export const metadata: Metadata = {
   title: "Anchor Informatics Pvt Ltd",

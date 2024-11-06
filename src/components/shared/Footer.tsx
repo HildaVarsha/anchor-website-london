@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import PageHeader from "./PageHeader";
 import Link from "next/link";
-import { Facebook, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Linkedin } from "lucide-react";
 
 const Footer = () => {
   const links = ["Home", "About", "Services", "Career", "Contact Us"];
