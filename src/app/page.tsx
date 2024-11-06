@@ -1,10 +1,13 @@
 import {
   HomeBanner,
+  HomeGetInTouch,
   HomeLetsTalk,
   HomeOurExpertise,
   HomeOurServices,
   HomeWhatWeDo,
+  HomeWhyChooseUs,
 } from "@/components/home";
+import { Footer } from "@/components/shared";
 
 export default function Home() {
   return (
@@ -14,6 +17,9 @@ export default function Home() {
       <HomeOurExpertise />
       <HomeWhatWeDo />
       <HomeOurServices />
+      <HomeWhyChooseUs />
+      <HomeGetInTouch />
+      <Footer />
     </div>
   );
 }
