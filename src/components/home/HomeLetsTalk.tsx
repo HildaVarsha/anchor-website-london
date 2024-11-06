@@ -8,7 +8,7 @@ import { PageHeader } from "../shared";
 const HomeLetsTalk = () => {
   return (
     <div className="py-12 container mx-auto">
-      <PageHeader label="Let’s Talk" />
+      <PageHeader label="Let’s Talk" className="text-center" />
       <Card className="p-5 flex items-center gap-4">
         <Button variant={"secondary"} className="h-24">
           <Image
