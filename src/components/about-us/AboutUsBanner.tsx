@@ -6,7 +6,7 @@ const AboutUsBanner = () => {
       className="flex flex-col justify-center"
       style={{
         backgroundImage:
-          "linear-gradient(to top, rgba(191, 219, 254, 0.6), rgba(30, 58, 138, 0.6)), url('/about-us-banner.png')",
+          "linear-gradient(to top, #F6FBFF, #0E1F51), url('/about-us-banner.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         width: "100%",
