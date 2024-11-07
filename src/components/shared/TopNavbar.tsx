@@ -20,7 +20,7 @@ const TopNavbar = () => {
           <Link href="/about-us" className="hover:text-blue-600">
             About
           </Link>
-          <Link href="/" className="hover:text-blue-600">
+          <Link href="/services" className="hover:text-blue-600">
             Services
           </Link>
           <Link href="/" className="hover:text-blue-600">
