@@ -27,7 +27,7 @@ const ServicesLeadingPower = () => {
           <div className="flex items-center gap-12 pt-4">
             <div className="flex items-center gap-1.5 text-white">
               <Check className=" w-4 h-4" />
-              24 Hour's Customer Service
+              24 Hours Customer Service
             </div>
             <div className="flex items-center gap-1.5 text-white">
               <Check className=" w-4 h-4" />

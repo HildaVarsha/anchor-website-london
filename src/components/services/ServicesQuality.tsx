@@ -1,6 +1,6 @@
 import React from "react";
 import { PageHeader } from "../shared";
-import { Button, Card, CardFooter } from "../ui";
+import { Button } from "../ui";
 import Image from "next/image";
 
 const ServicesQuality = () => {
