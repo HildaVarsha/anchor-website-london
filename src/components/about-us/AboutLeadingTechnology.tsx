@@ -47,7 +47,7 @@ Power Of Technology"
           <li>Always Latest Technology</li>
         </div>
         <div className="py-4 flex items-center gap-12">
-          <li>24 Hour's Customer Service</li>
+          <li>24 Hours Customer Service</li>
           <li>Always Latest Technology</li>
         </div>
       </div>
