@@ -5,7 +5,7 @@ import { Button } from "../ui";
 
 const TopNavbar = () => {
   return (
-    <div className="shadow border-b border-blue-50 top-0 fixed w-full bg-white">
+    <div className="shadow border-b border-blue-50 top-0 fixed w-full bg-white z-50">
       <div className="flex items-center justify-between py-4 container mx-auto">
         <Image
           src={"/logo.png"}
@@ -17,7 +17,7 @@ const TopNavbar = () => {
           <Link href="/" className="hover:text-blue-600">
             Home
           </Link>
-          <Link href="/" className="hover:text-blue-600">
+          <Link href="/about-us" className="hover:text-blue-600">
             About
           </Link>
           <Link href="/" className="hover:text-blue-600">
