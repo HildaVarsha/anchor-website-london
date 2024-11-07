@@ -19,7 +19,7 @@ const CareersJoinUs = () => {
           expert guidance designed to help you achieve your goals. Whether you
           are looking to learn something new, expand your network, or just be
           part of a positive community, this is the place to make it happen.
-          Click 'Join Now' and start your journey with us!
+          Join Now and start your journey with us!
         </p>
       </div>
       <div className="w-full">
