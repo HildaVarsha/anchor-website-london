@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import { TopNavbar } from "@/components/shared";
+import { BottomNavbar, TopNavbar } from "@/components/shared";
 
 export const metadata: Metadata = {
   title: "Anchor Informatics Pvt Ltd",
@@ -17,7 +17,12 @@ export default function RootLayout({
     <html lang="en">
       <body className="h-screen">
         <TopNavbar />
-        <div className="h-full w-full pt-16 overflow-auto">{children}</div>
+        <div className="h-full w-full pt-16 overflow-auto">
+          {children}
+          <div className="md:hidden">
+            <BottomNavbar />
+          </div>
+        </div>
       </body>
     </html>
   );
