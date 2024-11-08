@@ -1,12 +1,5 @@
 "use client";
-import {
-  Bolt,
-  BrickWall,
-  Cable,
-  Home,
-  IdCard,
-  TabletSmartphone,
-} from "lucide-react";
+import { Bolt, Cable, Home, IdCard, TabletSmartphone } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui";
