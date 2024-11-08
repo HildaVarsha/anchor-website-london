@@ -11,7 +11,7 @@ const BottomNavbar = () => {
   return (
     <div className="py-6 px-2 bottom-0 fixed w-full bg-white flex items-center justify-between gap-2">
       <Button
-        className="h-12 px-2"
+        className="h-12 w-16 p-2"
         variant={pathname == "/" ? "default" : "secondary"}
       >
         <Link href={"/"} className="text-xs flex flex-col items-center gap-1">
@@ -20,7 +20,7 @@ const BottomNavbar = () => {
         </Link>
       </Button>
       <Button
-        className="h-12 px-2"
+        className="h-12 w-16 p-2"
         variant={pathname == "/about-us" ? "default" : "secondary"}
       >
         <Link
@@ -32,7 +32,7 @@ const BottomNavbar = () => {
         </Link>
       </Button>
       <Button
-        className="h-12 px-2"
+        className="h-12 w-16 p-2"
         variant={pathname == "/services" ? "default" : "secondary"}
       >
         <Link
@@ -44,7 +44,7 @@ const BottomNavbar = () => {
         </Link>
       </Button>
       <Button
-        className="h-12 px-2"
+        className="h-12 w-16 p-2"
         variant={pathname == "/careers" ? "default" : "secondary"}
       >
         <Link
@@ -56,7 +56,7 @@ const BottomNavbar = () => {
         </Link>
       </Button>
       <Button
-        className="h-12 px-2"
+        className="h-12 w-16 p-2"
         variant={pathname == "/contact-us" ? "default" : "secondary"}
       >
         <Link
