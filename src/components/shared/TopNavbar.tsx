@@ -3,10 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const TopNavbar = () => {
   const pathname = usePathname();
+  const router = useRouter();
   const isActive = (path: string) => {
     const defaultClass = "hover:text-blue-600";
     const activeClass = "text-blue-600 hover:text-blue-900";
@@ -34,10 +35,12 @@ const TopNavbar = () => {
           <Link href="/careers" className={isActive("/careers")}>
             Careers
           </Link>
-          <Link href="/" className={isActive("/contact-us")}>
+          <Link href="/contact-us" className={isActive("/contact-us")}>
             Contact
           </Link>
-          <Button>Get In Touch</Button>
+          <Button onClick={() => router.push("/contact-us")}>
+            Get In Touch
+          </Button>
         </div>
       </div>
     </div>
