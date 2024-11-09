@@ -13,7 +13,7 @@ const CareersGrowth = () => {
           />
           <p className="text-lg font-semibold text-white">
             At Anchor Informatics, we believe that growth is not just a
-            possibility—it's a priority. Here, you will find more than just a
+            possibility—it is a priority. Here, you will find more than just a
             job; you will discover a pathway to expand your skills, connect with
             mentors, and achieve your career aspirations. With a strong focus on
             <span className="text-blue-600">
