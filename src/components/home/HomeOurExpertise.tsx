@@ -30,9 +30,9 @@ const HomeOurExpertise = () => {
     );
   };
   return (
-    <div className="pb-12  container mx-auto">
+    <div className="pb-12  container mx-auto px-4 md:px-0">
       <PageHeader label="Our Expertise—Your Edge" className="text-center" />
-      <div className="flex items-stretch justify-between gap-12">
+      <div className="flex flex-col md:flex-row items-stretch justify-between gap-12">
         <ExpertiseCard
           imageSrc={"/expertise-saas.png"}
           title={" SaaS (Software as a Service)"}

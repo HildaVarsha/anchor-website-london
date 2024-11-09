@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-
 import "./globals.css";
 import { BottomNavbar, TopNavbar } from "@/components/shared";
 
@@ -15,13 +14,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="h-screen">
+      <body className="">
         <TopNavbar />
-        <div className="h-full w-full pt-16 overflow-auto">
+        <div className="min-h-screen w-full pt-16 pb-20 md:pb-0">
           {children}
-          <div className="md:hidden">
-            <BottomNavbar />
-          </div>
+        </div>
+        <div className="md:hidden fixed bottom-0 w-full">
+          <BottomNavbar />
         </div>
       </body>
     </html>
