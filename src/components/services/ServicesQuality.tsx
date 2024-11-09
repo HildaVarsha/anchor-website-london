@@ -25,7 +25,7 @@ const ServicesQuality = () => {
           <p className="w-16 h-2 rounded-full bg-blue-600"></p>
           <p className="w-8 h-2 rounded-full bg-blue-600"></p>
         </div>
-        <p className="font-light h-24">{description}</p>
+        <p className="font-light md:h-24">{description}</p>
         <div className="pt-4 flex items-center justify-center">
           <Button>View More</Button>
         </div>
@@ -40,7 +40,7 @@ const ServicesQuality = () => {
           className="text-center"
         />
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <ServicesCard
           imageSrc={"/services-web.png"}
           title={"Web Development & Redesinging"}

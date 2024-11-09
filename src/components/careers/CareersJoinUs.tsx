@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const CareersJoinUs = () => {
   return (
-    <div className="py-12 container mx-auto flex gap-12 justify-between w-full">
+    <div className="py-12 container mx-auto flex flex-col md:flex-row px-4 md:px-0 gap-12 justify-between w-full">
       <div className="w-full">
         <PageHeader label={"Join our team at Anchor  informatics"} />
         <Button className="bg-white rounded-full border border-blue-600 text-blue-600">

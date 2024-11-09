@@ -4,7 +4,7 @@ import { PageHeader } from "../shared";
 
 const AboutLeadingTechnology = () => {
   return (
-    <div className="py-12 container mx-auto flex  gap-12">
+    <div className="py-12 container mx-auto flex flex-col md:flex-row px-4 md:px-0  gap-12">
       <div className="w-full relative">
         <Image
           src={
@@ -22,7 +22,7 @@ const AboutLeadingTechnology = () => {
           alt={"Leading Workers"}
           width={350}
           height={350}
-          className="rounded-lg absolute bottom-4 right-4 border-4 border-stone-200"
+          className="rounded-lg md:absolute bottom-4 right-4 border-4 border-stone-200 mt-4 md:mt-0"
         />
       </div>
       <div className="w-full">

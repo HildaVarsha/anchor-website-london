@@ -28,7 +28,7 @@ const cardData = [
 
 const AboutWorkingProcess = () => {
   return (
-    <div className="py-12 container mx-auto">
+    <div className="py-12 container mx-auto px-4 md:px-0">
       <p className="text-xs text-center pb-4">--- Work Progress ---</p>
       <div className="max-w-lg mx-auto">
         <PageHeader
@@ -37,7 +37,7 @@ const AboutWorkingProcess = () => {
         />
       </div>
 
-      <div className="py-4 flex justify-between gap-12">
+      <div className="py-4 flex flex-col md:flex-row justify-between gap-12">
         {cardData.map(({ id, bgColor, title, content }) => (
           <Card key={id} className={`p-5 ${bgColor} w-full`}>
             <p className="font-light text-5xl text-white">{id}</p>
