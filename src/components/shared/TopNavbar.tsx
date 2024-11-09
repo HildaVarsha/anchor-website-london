@@ -1,13 +1,18 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import { Button } from "../ui";
-import { usePathname, useRouter } from "next/navigation";
+import React, { useState } from "react";
+import { Button, Dialog, DialogContent, DialogTrigger } from "../ui";
+import { usePathname } from "next/navigation";
+import { ContactUsForm } from "../contactUs";
 
 const TopNavbar = () => {
   const pathname = usePathname();
-  const router = useRouter();
+
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClose = () => {
+    setIsOpen(false);
+  };
   const isActive = (path: string) => {
     const defaultClass = "hover:text-blue-600";
     const activeClass = "text-blue-600 hover:text-blue-900";
@@ -38,9 +43,18 @@ const TopNavbar = () => {
           <Link href="/contact-us" className={isActive("/contact-us")}>
             Contact
           </Link>
-          <Button onClick={() => router.push("/contact-us")}>
-            Get In Touch
-          </Button>
+          <Dialog open={isOpen} onOpenChange={setIsOpen}>
+            <DialogTrigger>
+              {" "}
+              <Button>Get In Touch</Button>
+            </DialogTrigger>
+            <DialogContent>
+              <h1 className="text-lg text-center text-blue-600 font-semibold">
+                Get In Touch With Us
+              </h1>
+              <ContactUsForm closeDialogue={handleClose} />
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </div>
