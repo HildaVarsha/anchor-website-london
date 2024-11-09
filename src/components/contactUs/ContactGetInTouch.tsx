@@ -1,28 +1,23 @@
 import React from "react";
-import { Button, Card, Input, Textarea } from "../ui";
+import { Button, Card } from "../ui";
 import { PageHeader } from "../shared";
 import Link from "next/link";
 import Image from "next/image";
+import ContactUsForm from "./ContactUsForm";
 
 const ContactGetInTouch = () => {
   return (
-    <div className="py-12 px-4 md:px-0 bg-blue-950 w-full h-full md:h-[800px]">
+    <div className="py-12 px-4 md:px-0 bg-blue-950 w-full h-full">
       <p className="text-sm text-white font-semibold text-center pb-2">
         Get In Touch
       </p>
       <PageHeader label="Hey!Lets Talk" className="text-white text-center" />
       <div className="container mx-auto flex flex-col md:flex-row items-stretch justify-between gap-12 h-full">
-        <div className="w-full md:w-[60%] md:h-full">
-          <Card className="rounded-md p-8 h-[500px]">
-            <Input placeholder="Name" className="mb-4 h-12" />
-            <Input placeholder="Email" className="mb-4 h-12" />
-            <Input placeholder="Phone" className="mb-4 h-12" />
-            <Textarea placeholder="Your Message" className="mb-4 h-44" />
-            <Button className="mt-4">Send Now</Button>
-          </Card>
+        <div className="w-full md:w-[60%] h-full">
+          <ContactUsForm />
         </div>
-        <div className="w-full md:w-[40%]">
-          <Card className="rounded-md p-8">
+        <div className="w-full md:w-[40%] h-full">
+          <Card className="rounded-md p-8 h-full">
             <div className="flex flex-col md:flex-row  text-center md:text-start items-center gap-8 mb-8">
               <Button className="h-20 w-20 bg-stone-100 text-blue-600 ">
                 <Image
