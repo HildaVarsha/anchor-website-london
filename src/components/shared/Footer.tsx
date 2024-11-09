@@ -21,7 +21,7 @@ const Footer = () => {
   ];
   const SocialLinks = () => {
     return (
-      <div className="bg-white flex items-center justify-between py-4 container mx-auto">
+      <div className="bg-white flex items-center justify-between py-4 container mx-auto px-4 md:px-0">
         <p className="text-sm font-semibold">Anchor Informatics Pvt Ltd</p>
         <div className="flex items-center gap-4">
           <Link href={"/"}>
@@ -56,55 +56,62 @@ const Footer = () => {
             objectFit="cover"
           />
 
-          <div className="py-4 flex justify-between">
-            <div className="flex flex-col gap-4 w-full">
+          <div className="py-4 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 px-4 md:px-0">
+            <div className="flex flex-row items-center md:items-start md:flex-col w-full gap-4 md:gap-0">
+              <div>
+                <Image
+                  src="/call-us.png"
+                  alt="Call Us"
+                  width={50}
+                  height={50}
+                  objectFit="cover"
+                />
+              </div>
+              <div className="flex flex-col">
+                <p className="text-lg pt-4 font-semibold text-white pb-2">
+                  Call Us
+                </p>
+                {phoneNumbers.map(({ label, href }) => (
+                  <Link
+                    key={href}
+                    href={href}
+                    className="text-xs md:text-sm text-white py-2"
+                  >
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex flex-row items-center md:items-start md:flex-col w-full gap-4 md:gap-0">
+              <div>
+                <Image
+                  src="/write-us.png"
+                  alt="Write Us"
+                  width={50}
+                  height={50}
+                  objectFit="cover"
+                />
+              </div>
+              <div className="flex flex-col">
+                <p className="text-lg pt-4 font-semibold text-white pb-2">
+                  Write Us
+                </p>
+                {emails.map(({ label, href }) => (
+                  <Link
+                    key={href}
+                    href={href}
+                    className="text-xs md:text-sm text-white py-2"
+                  >
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="flex flex-row md:flex-col flex-wrap gap-4 w-full">
               {links.map((link) => (
                 <Link key={link} href="/" className="text-sm text-white">
                   {link}
-                </Link>
-              ))}
-            </div>
-
-            <div className="flex flex-col w-full">
-              <Image
-                src="/call-us.png"
-                alt="Call Us"
-                width={50}
-                height={50}
-                objectFit="cover"
-              />
-              <p className="text-lg pt-4 font-semibold text-white pb-2">
-                Call Us
-              </p>
-              {phoneNumbers.map(({ label, href }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-sm text-white py-2"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
-
-            <div className="flex flex-col w-full">
-              <Image
-                src="/write-us.png"
-                alt="Write Us"
-                width={50}
-                height={50}
-                objectFit="cover"
-              />
-              <p className="text-lg pt-4 font-semibold text-white pb-2">
-                Write Us
-              </p>
-              {emails.map(({ label, href }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="text-sm text-white py-2"
-                >
-                  {label}
                 </Link>
               ))}
             </div>

@@ -9,7 +9,7 @@ const BottomNavbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="py-6 px-2 bottom-0 fixed w-full bg-white flex items-center justify-between gap-2">
+    <div className="py-4 px-2 bottom-0 fixed w-full bg-white flex items-center justify-between gap-2 border-t border-blue-200">
       <Button
         className="h-12 w-16 p-2"
         variant={pathname == "/" ? "default" : "secondary"}

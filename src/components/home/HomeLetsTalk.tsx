@@ -7,10 +7,10 @@ import { PageHeader } from "../shared";
 
 const HomeLetsTalk = () => {
   return (
-    <div className="py-12 container mx-auto">
+    <div className="py-12 container mx-auto px-4 md:px-0">
       <PageHeader label="Let’s Talk" className="text-center" />
       <Card className="p-5 flex items-center gap-4">
-        <Button variant={"secondary"} className="h-24">
+        <Button variant={"secondary"} className="h-24 hidden md:block">
           <Image
             src={"/lets-talk.png"}
             alt={"Lets Talk"}
@@ -24,7 +24,7 @@ const HomeLetsTalk = () => {
             <PhoneCallIcon className="w-4 h-4" />
             <p>+44 7438 846089</p>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col md:flex-row md:items-center gap-4">
             <div className="flex items-center gap-2">
               <MailIcon className="w-4 h-4" />
               <Link
@@ -36,7 +36,7 @@ const HomeLetsTalk = () => {
                 rafi@anchorinformatics.co.uk
               </Link>
             </div>
-            |
+            <span className="hidden md:block">|</span>
             <div className="flex items-center gap-2">
               <ContactIcon className="w-4 h-4" />
               <Link

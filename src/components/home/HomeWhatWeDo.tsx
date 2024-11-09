@@ -5,8 +5,8 @@ import { Card } from "../ui";
 
 const HomeWhatWeDo = () => {
   return (
-    <div className="bg-blue-950 py-16">
-      <div className="container mx-auto flex items-stretch  gap-12">
+    <div className="bg-blue-950 py-16 px-4 md:px-0">
+      <div className="container mx-auto flex flex-col md:flex-row items-stretch  gap-12">
         <Image
           src={
             "https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -34,7 +34,7 @@ const HomeWhatWeDo = () => {
             trends of tomorrow. We publish hundreds of papers annually, pushing
             the boundaries of what’s possible.
           </p>
-          <div className="pt-8 flex items-center gap-12">
+          <div className="pt-8 flex flex-col md:flex-row items-center gap-12">
             <Card className="p-8">
               <p className="text-2xl text-blue-600 pb-4 text-center">
                 Our Vision

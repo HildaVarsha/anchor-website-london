@@ -3,7 +3,7 @@ import { PageHeader } from "../shared";
 
 const HomeWhyChooseUs = () => {
   return (
-    <div className="py-12 bg-blue-50">
+    <div className="py-12 bg-blue-50 px-4 md:px-0">
       <div className="container mx-auto">
         <PageHeader label={"Why Choose Us?"} className="" />
         <p className="">
@@ -15,7 +15,7 @@ const HomeWhyChooseUs = () => {
           throughout digital transformation, and orchestrating continuous
           innovation.
         </p>
-        <div className="pt-8 flex items-center gap-12">
+        <div className="pt-8 flex flex-col md:flex-row items-center gap-12">
           <div className="w-48 h-48 border-[20px] border-blue-950 rounded-full text-blue-950 bg-white font-bold flex flex-col items-center justify-center">
             <p className=" text-center">560+</p>
             <p className="text-center">Projects Completed</p>
