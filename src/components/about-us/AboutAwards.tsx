@@ -10,8 +10,8 @@ const awardsData = [
 
 const AboutAwards = () => {
   return (
-    <div className="py-12 container mx-auto">
-      <Card className="bg-blue-950 text-white py-12 px-16 flex items-center justify-between">
+    <div className="py-12 container mx-auto px-4 md:px-0">
+      <Card className="bg-blue-950 text-white py-12 px-16 flex flex-col md:flex-row items-center justify-between">
         {awardsData.map(({ title, count }, index) => (
           <div key={index} className="text-center">
             <p className="text-white font-medium text-xl">{title}</p>

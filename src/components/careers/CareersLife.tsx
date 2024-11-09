@@ -13,8 +13,8 @@ const cardItems = [
 
 const CareersLife = () => {
   return (
-    <div className="py-12 container mx-auto">
-      <div className="w-full flex gap-12">
+    <div className="py-12 container mx-auto px-4 md:px-0">
+      <div className="w-full flex flex-col md:flex-row gap-12">
         <Image
           src="https://images.pexels.com/photos/776615/pexels-photo-776615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt="Career"

@@ -5,8 +5,8 @@ import { Check } from "lucide-react";
 
 const ServicesLeadingPower = () => {
   return (
-    <div className="bg-blue-950 py-12 h-[500px]">
-      <div className="container mx-auto flex gap-12 items-center justify-between">
+    <div className="bg-blue-950 py-12 h-full px-4 md:px-0">
+      <div className="container mx-auto flex gap-12 flex-col md:flex-row items-center justify-between">
         <div className="w-full">
           <div className="max-w-md">
             <PageHeader
@@ -39,7 +39,7 @@ const ServicesLeadingPower = () => {
             tailored to drive growth and transformation.
           </p>
         </div>
-        <div className="w-full relative">
+        <div className="w-full relative hidden md:block">
           <Image
             src={"/services-dot.png"}
             alt={"Leading Services"}
