@@ -10,7 +10,7 @@ export async function sendEmail({
   content: string;
   name: string;
 }) {
-  let transporter = nodemailer.createTransport({
+  const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
       user: process.env.EMAIL,
@@ -19,7 +19,7 @@ export async function sendEmail({
   });
 
   // Define email options
-  let mailOptions = {
+  const mailOptions = {
     from: "regis@gmail.com",
     to: "info@anchorinformatics.co.uk",
     subject: `Mail from ${email}`,
@@ -53,7 +53,7 @@ export async function sendEmail({
   };
 
   try {
-    let info = await transporter.sendMail(mailOptions);
+    const info = await transporter.sendMail(mailOptions);
 
     console.log("Message sent: %s", info.messageId);
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
