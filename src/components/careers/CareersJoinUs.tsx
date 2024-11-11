@@ -1,14 +1,20 @@
+"use client";
 import React from "react";
 import { PageHeader } from "../shared";
 import { Button } from "../ui";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const CareersJoinUs = () => {
+  const router = useRouter();
   return (
     <div className="py-12 container mx-auto flex flex-col md:flex-row px-4 md:px-0 gap-12 justify-between w-full">
       <div className="w-full">
         <PageHeader label={"Join our team at Anchor  informatics"} />
-        <Button className="bg-white rounded-full border border-blue-600 text-blue-600">
+        <Button
+          onClick={() => router.push("/contact-us")}
+          className="bg-white rounded-full border border-blue-600 text-blue-600"
+        >
           See Openings
         </Button>
         <p className="font-medium pt-8">

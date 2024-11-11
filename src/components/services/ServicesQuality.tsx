@@ -16,8 +16,8 @@ const ServicesQuality = () => {
     className?: string;
   }) => {
     return (
-      <div className={`bg-blue-50 p-8 border-blue-100 ${className}`}>
-        <div className="p-4 bg-white w-24 h-24 rounded-md">
+      <div className={`bg-white shadow p-8 border-blue-100 ${className}`}>
+        <div className="p-4 bg-blue-100 w-16 h-16 rounded-md">
           <Image src={imageSrc} alt={title} width={150} height={150} />
         </div>
         <p className="text-sm font-semibold pt-8">{title}</p>

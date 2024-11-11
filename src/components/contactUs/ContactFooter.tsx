@@ -8,10 +8,10 @@ const ContactFooter = () => {
         © 2024 Anchor Informatics. All rights reserved
       </p>
       <div className="flex items-center gap-4 pt-4 md:pt-0">
-        <Link href={"/"} className="text-xs font-light">
+        <Link href={"/terms-and-conditions"} className="text-xs font-light">
           Terms & Condition
         </Link>
-        <Link href={"/"} className="text-xs font-light">
+        <Link href={"/privacy-policy"} className="text-xs font-light">
           Privacy Policy
         </Link>
         <Link href={"/contact-us"} className="text-xs font-light">

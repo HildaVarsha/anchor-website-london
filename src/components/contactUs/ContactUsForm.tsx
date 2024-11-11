@@ -27,12 +27,17 @@ const validationSchema = Yup.object().shape({
   message: Yup.string().required("Message is required"),
 });
 
-const ContactUsForm = ({ closeDialogue }: { closeDialogue?: any }) => {
+const ContactUsForm = ({
+  setIsOpen,
+}: {
+  setIsOpen?: (open: boolean) => void;
+}) => {
   const [loading, setLoading] = useState(false);
   const { toast } = useToast();
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<TForm>({
     resolver: yupResolver(validationSchema),
@@ -48,14 +53,16 @@ const ContactUsForm = ({ closeDialogue }: { closeDialogue?: any }) => {
     });
     if (response == "success") {
       setLoading(false);
-      closeDialogue();
+      setIsOpen?.(false);
+      reset();
       toast({
         title: "Thank you for contacting us!",
         description: "Our team will contact you within 3 working days",
       });
     } else {
       setLoading(false);
-      closeDialogue();
+      setIsOpen?.(false);
+      reset();
       toast({
         variant: "destructive",
         title: "Something went wrong",

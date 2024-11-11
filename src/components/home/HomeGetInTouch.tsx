@@ -1,7 +1,10 @@
+"use client";
 import React from "react";
 import { Button } from "../ui";
+import { useRouter } from "next/navigation";
 
 const HomeGetInTouch = () => {
+  const router = useRouter();
   return (
     <div
       className="my-12 container mx-auto h-48 rounded-md flex flex-col items-center justify-center "
@@ -18,7 +21,12 @@ const HomeGetInTouch = () => {
       <p className="text-md md:text-xl font-bold text-white mb-4">
         we are Catching up through Video”
       </p>
-      <Button className="bg-white text-blue-600">Get In Touch</Button>
+      <Button
+        onClick={() => router.push("/contact-us")}
+        className="bg-white text-blue-600"
+      >
+        Get In Touch
+      </Button>
     </div>
   );
 };

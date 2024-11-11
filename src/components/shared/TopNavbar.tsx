@@ -10,9 +10,7 @@ const TopNavbar = () => {
   const pathname = usePathname();
 
   const [isOpen, setIsOpen] = useState(false);
-  const handleClose = () => {
-    setIsOpen(false);
-  };
+
   const isActive = (path: string) => {
     const defaultClass = "hover:text-blue-600";
     const activeClass = "text-blue-600 hover:text-blue-900";
@@ -52,7 +50,7 @@ const TopNavbar = () => {
               <h1 className="text-lg text-center text-blue-600 font-semibold">
                 Get In Touch With Us
               </h1>
-              <ContactUsForm closeDialogue={handleClose} />
+              <ContactUsForm setIsOpen={setIsOpen} />
             </DialogContent>
           </Dialog>
         </div>
