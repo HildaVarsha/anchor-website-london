@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ui";
+import Link from "next/link";
 
 const HomeBanner = () => {
   return (
@@ -24,7 +25,14 @@ const HomeBanner = () => {
         <p className="text-3xl md:text-5xl font-bold py-4">
           Transformation, Globally.
         </p>
-        <Button className="mt-4">View More</Button>
+        <div className="mt-4">
+          <Link
+            href={"/about-us"}
+            className=" bg-blue-600 p-2 rounded-md text-white txt-sm hover:bg-blue-700"
+          >
+            View More
+          </Link>
+        </div>
       </div>
 
       {/* Optional overlay for darkening the video */}
